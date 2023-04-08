@@ -108,6 +108,10 @@ header {
      letter-spacing: 0.02em;
      text-decoration: none;
 
+     transition-property: color;
+     transition-duration: 250ms;
+     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .header-container .current-page::after {
@@ -161,7 +165,6 @@ header {
      border-radius: 2px;
 
      opacity: 1;
-     transition: opacity 250ms var(--time-function);
 }
 
 
@@ -182,9 +185,6 @@ header {
      letter-spacing: 0.02em;
      text-decoration: none;
 
-     transition-property: color;
-     transition-duration: 250ms;
-     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-navigation .header-logo {
@@ -394,7 +394,6 @@ header {
      line-height: 1.5;
      letter-spacing: 0.04em;
      cursor: pointer;
-
 }
 
 /* button[type="button"] {
@@ -871,8 +870,6 @@ ul button[type="button"].btn:active {
      color: var(--color-bck-btn);
 }
 
-
-
 .list-produckt {
      display: flex;
      flex-wrap: wrap;
@@ -898,9 +895,4 @@ ul button[type="button"].btn:active {
      box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
           0px 1px 1px rgba(46, 47, 66, 0.16),
           0px 2px 1px rgba(46, 47, 66, 0.08);
-
-     transition-property: border, box-shadow;
-     transition-duration: 250ms;
-     transition-timing-function: var(--time-function);
-
 }
